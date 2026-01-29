@@ -5,7 +5,7 @@
 [![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Enabled-blueviolet?style=for-the-badge&logo=deltalake&logoColor=white)](https://delta.io/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> **Repositori Praktik & Dokumentasi Komprehensif**
+> **Repositori Praktik & Dokumentasi**
 >
 > Selamat datang di repositori pembelajaran Databricks Certified Associate Developer for Apache Spark. Repositori ini berisi implementasi kode mendalam, eksperimen teknis, dan dokumentasi hasil belajar yang diadaptasi dari materi ahli.
 
@@ -40,10 +40,10 @@ Berikut adalah rincian mendalam tentang apa yang ada di setiap direktori dan kon
 
 ---
 
-### 💎 Dokumentasi Spesial
+### 💎 Dokumentasi
 
 ### 📄 [Databricks Certified Report.pdf](./Databricks%20Certified%20Report.pdf)
-Jangan lewatkan file ini. Ini adalah **laporan dokumentasi pribadi** yang saya susun. Di dalamnya terdapat:
+Jangan lewatkan file ini. Ini adalah **laporan dokumentasi**. Di dalamnya terdapat:
 *   Rangkuman eksekutif dari konsep-konsep tersulit.
 *   Analisis pola soal sertifikasi.
 *   Catatan kaki tentang "gotchas" dan jebakan umum saat bekerja dengan Spark.
@@ -54,7 +54,7 @@ Jangan lewatkan file ini. Ini adalah **laporan dokumentasi pribadi** yang saya s
 
 Salah satu tantangan terbesar menjalankan Spark di Windows adalah konfigurasi `HADOOP_HOME` dan `winutils.exe`. Kode di repositori ini telah dikonfigurasi secara khusus untuk menangani hal tersebut.
 
-### Snippet Konfigurasi (Yang Saya Gunakan)
+### Snippet Konfigurasi (Local Windows)
 Anda akan melihat pola konfigurasi ini di setiap notebook untuk memastikan stabilitas di Windows:
 
 ```python
@@ -109,6 +109,6 @@ Anda bebas menggunakan kode ini untuk pembelajaran Anda sendiri. Jika Anda mengg
 
 **Happy Coding & Good Luck on Your Certification! 🚀**
 
-<sub>Dikelola oleh [Muhammad Zaky Farhan]</sub>
+<sub>Diedit oleh [Muhammad Zaky Farhan]</sub>
 
 </div>
