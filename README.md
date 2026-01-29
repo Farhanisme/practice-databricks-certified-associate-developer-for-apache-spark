@@ -1,50 +1,114 @@
-# Databricks Certified Associate Developer for Apache Spark Using Python
-<a href="https://www.packtpub.com/product/databricks-certified-associate-developer-for-apache-spark-using-python/9781804619780"><img src="https://content.packt.com/_/image/original/B19176/cover_image_large.jpg" alt="no-image" height="256px" align="right"></a>
+# 🚀 Databricks Certified Associate Developer for Apache Spark™ (Python)
 
-This is the code repository for [Databricks Certified Associate Developer for Apache Spark Using Python](https://www.packtpub.com/product/databricks-certified-associate-developer-for-apache-spark-using-python/9781804619780), published by Packt.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Apache Spark](https://img.shields.io/badge/Apache%20Spark-3.5-orange?style=for-the-badge&logo=apachespark&logoColor=white)](https://spark.apache.org/)
+[![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Enabled-blueviolet?style=for-the-badge&logo=deltalake&logoColor=white)](https://delta.io/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-**The ultimate guide to getting certified in Apache Spark using practical examples with Python**
+> **Repositori Praktik & Dokumentasi Komprehensif**
+>
+> Selamat datang di repositori pembelajaran Databricks Certified Associate Developer for Apache Spark. Repositori ini berisi implementasi kode mendalam, eksperimen teknis, dan dokumentasi hasil belajar yang diadaptasi dari materi ahli.
 
-## What is this book about?
-This guide gets you ready for certification with expert-backed content, key exam concepts, and topic reviews. Additionally, you’ll be able to make the most of Apache Spark 3.0 to modernize workloads and more using specific tools and techniques.
+---
 
-This book covers the following exciting features:
-* Create and manipulate SQL queries in Spark
-* Build complex Spark functions using Spark UDFs
-* Architect big data apps with Spark fundamentals for optimal design
-* Apply techniques to manipulate and optimize big data applications
-* Build real-time or near-real-time applications using Spark Streaming
-* Work with Apache Spark for machine learning applications
+## 🌟 Tentang Proyek Ini
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/Databricks-Certified-Associate-Developer-Apache/dp/1804619787) today!
+Repositori ini adalah **laboratorium eksperimental** di mana dilakukan membedah konsep-konsep inti Apache Spark menggunakan Python (PySpark). Setiap bab mewakili langkah maju dalam memahami bagaimana Spark memproses Big Data, mulai dari manipulasi baris sederhana hingga integrasi **Delta Lake** dan Machine Learning.
 
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
-alt="https://www.packtpub.com/" border="5" /></a>
+### 📚 Kredit & Referensi Utama
+Materi dasar dan kurikulum pembelajaran diadaptasi dari buku:
+*   **Judul:** *Databricks Certified Associate Developer for Apache Spark Using Python*
+*   **Penulis:** Saba Shah
+*   **Penerbit:** Packt Publishing (2024)
+*   **Repo Asli:** [PacktPublishing/Databricks-Certified-Associate-Developer-for-Apache-Spark-using-Python](https://github.com/PacktPublishing/Databricks-Certified-Associate-Developer-for-Apache-Spark-using-Python)
 
-## Instructions and Navigations
-All of the code is organized into folders. For example, Chapter04.
+*Catatan: Repositori ini dikelola secara independen untuk tujuan edukasi dan dokumentasi pribadi.*
 
-The code will look like the following:
+---
+
+## 🗂 Struktur & Bedah Kode (Code Deep Dive)
+
+Berikut adalah rincian mendalam tentang apa yang ada di setiap direktori dan konsep teknis yang diterapkan:
+
+| Direktori | Topik Utama | Highlight Teknis & Implementasi |
+| :--- | :--- | :--- |
+| **`Chapter04/`** | **Spark SQL & DataFrame API** | • **Data Creation:** Membuat DataFrame dari `Row` objects, lists, dan Pandas.<br>• **Schema Definition:** Eksplorasi inferensi skema vs definisi eksplisit.<br>• **Manipulasi Tanggal:** Penggunaan `datetime` dan `date` types dalam Spark.<br>• **Transformasi:** `select`, `filter`, `groupBy`, dan agregasi dasar. |
+| **`Chapter05/`** | **Advanced Ops & Delta Lake** | • **Delta Lake Integration:** Konfigurasi `SparkSession` dengan `io.delta` package untuk fitur ACID transactions.<br>• **Complex Types:** Manipulasi tipe data `Struct`, `Array`, dan `Map`.<br>• **UDFs:** Implementasi User Defined Functions Python vs Pandas UDFs untuk performa.<br>• **File Formats:** Perbandingan baca/tulis CSV, ORC, dan Parquet. |
+| **`Chapter06/`** | **Architecture & Optimization** | • **Spark Internals:** Memahami DAG, Jobs, Stages, dan Tasks.<br>• **Catalyst Optimizer:** Bagaimana Spark mengoptimalkan query logical plan.<br>• **Caching Strategies:** Penggunaan `cache()` vs `persist()` dan dampaknya pada memori.<br>• **Broadcasting:** Optimasi join menggunakan broadcast variables. |
+| **`Chapter07/`** | **Spark Streaming** | • **Structured Streaming:** Konsep micro-batch processing.<br>• **Input Sources:** Membaca data streaming dari file (sebagai simulasi).<br>• **Window Operations:** Event-time windows dan handling late data.<br>• **Output Sinks:** Menulis stream ke console atau memory untuk debugging. |
+| **`Chapter08/`** | **Machine Learning (MLlib)** | • **ML Pipeline:** Membangun pipeline `VectorAssembler` ➔ `Model`.<br>• **Feature Engineering:** Transformasi data mentah menjadi vektor fitur.<br>• **Regression:** Studi kasus prediksi harga rumah (`HousePricePrediction.csv`) menggunakan algoritma regresi.<br>• **Evaluasi:** Mengukur performa model dengan metrics standar. |
+
+---
+
+### 💎 Dokumentasi Spesial
+
+### 📄 [Databricks Certified Report.pdf](./Databricks%20Certified%20Report.pdf)
+Jangan lewatkan file ini. Ini adalah **laporan dokumentasi pribadi** yang saya susun. Di dalamnya terdapat:
+*   Rangkuman eksekutif dari konsep-konsep tersulit.
+*   Analisis pola soal sertifikasi.
+*   Catatan kaki tentang "gotchas" dan jebakan umum saat bekerja dengan Spark.
+
+---
+
+## ⚙️ Setup Environment (Windows Optimized)
+
+Salah satu tantangan terbesar menjalankan Spark di Windows adalah konfigurasi `HADOOP_HOME` dan `winutils.exe`. Kode di repositori ini telah dikonfigurasi secara khusus untuk menangani hal tersebut.
+
+### Snippet Konfigurasi (Yang Saya Gunakan)
+Anda akan melihat pola konfigurasi ini di setiap notebook untuk memastikan stabilitas di Windows:
+
+```python
+import os
+import sys
+from pyspark.sql import SparkSession
+
+# Konfigurasi Path Windows
+os.environ['HADOOP_HOME'] = "C:\\hadoop"
+os.environ['PYSPARK_PYTHON'] = sys.executable
+os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
+
+# JVM Options untuk mengatasi limitasi Java terbaru
+jvm_options = (
+    "--add-opens=java.base/java.lang=ALL-UNNAMED "
+    "--add-opens=java.base/java.nio=ALL-UNNAMED "
+    # ... (opsi lainnya)
+)
 ```
-# Perform an aggregation to calculate the average salary
-average_salary = spark.sql("SELECT AVG(Salary) AS average_salary FROM 
-employees")
-```
 
-**Following is what you need for this book:**
-This book is for you if you’re a professional looking to venture into the world of big data and data engineering, a data professional who wants to endorse your knowledge of Spark, or a student. Although working knowledge of Python is required, no prior Spark knowledge is needed. Additionally, experience with Pyspark will be beneficial.
+### Cara Menjalankan di Lokal
 
-With the following software and hardware list you can run all code files present in the book (Chapter 4-8).
-### Software and Hardware List
-| Chapter | Software required | OS required |
-| -------- | ------------------------------------ | ----------------------------------- |
-| 4-8 | Python | Windows, Mac OS X, and Linux |
-| 4-8 | Spark  | Windows, Mac OS X, and Linux |
-                       
-### Related products
-* Business Intelligence with Databricks SQL [[Packt]](https://www.packtpub.com/product/business-intelligence-with-databricks-sql/9781803235332) [[Amazon]](https://www.amazon.com/Business-Intelligence-Databricks-SQL-intelligence/dp/1803235330/ref=sr_1_1?crid=1QYCAOZP9E3NH&dib=eyJ2IjoiMSJ9.nKZ7dRFPdDZyRvWwKM_NiTSZyweCLZ8g9JdktemcYzaWNiGWg9PuoxY2yb2jogGyK8hgRliKebDQfdHu2rRnTZTWZbsWOJAN33k65RFkAgdFX-csS8HgTFfjZj-SFKLpp4FC6LHwQvWr9Nq6f5x6eg.jh99qre-Hl4OHA9rypXLmSGsQp4exBvaZ2xUOPDQ0mM&dib_tag=se&keywords=Business+Intelligence+with+Databricks+SQL&qid=1718173191&s=books&sprefix=business+intelligence+with+databricks+sql%2Cstripbooks-intl-ship%2C553&sr=1-1)
+1.  **Clone Repositori**
+    ```bash
+    git clone https://github.com/username-anda/repo-ini.git
+    cd repo-ini
+    ```
 
-* Azure Databricks Cookbook [[Packt]](https://www.packtpub.com/product/azure-databricks-cookbook/9781789809718) [[Amazon]](https://www.amazon.com/Azure-Databricks-Cookbook-Jonathan-Wood/dp/1789809711)
+2.  **Persiapkan Python Environment**
+    ```bash
+    python -m venv venv
+    .\venv\Scripts\Activate
+    pip install pyspark pandas jupyter notebook delta-spark
+    ```
 
-## Get to Know the Author
-**Saba Shah** is a Data and AI Architect and Evangelist with a wide technical breadth and deep understanding of big data and machine learning technologies. She has experience leading data science and data engineering teams in Fortune 500s as well as startups. She started her career as a software engineer but soon transitioned to big data. She is currently a solutions architect at Databricks and works with enterprises building their data strategy and helping them create a vision for the future with machine learning and predictive analytics. Saba graduated with a degree in Computer Science and later earned an MS degree in Advanced Web Technologies. She is passionate about all things data and cricket. She currently resides in RTP, NC.
+3.  **Jalankan Jupyter**
+    ```bash
+    jupyter notebook
+    ```
+    Buka file `.ipynb` di browser Anda dan jalankan setiap sel.
+
+---
+
+## 🤝 Kontribusi & Lisensi
+
+Repositori ini dilisensikan di bawah **MIT License**.
+Anda bebas menggunakan kode ini untuk pembelajaran Anda sendiri. Jika Anda menggunakan materi dari sini, mohon sertakan atribusi ke repositori ini dan penulis aslinya.
+
+---
+
+<div align="center">
+
+**Happy Coding & Good Luck on Your Certification! 🚀**
+
+<sub>Dikelola oleh [Muhammad Zaky Farhan]</sub>
+
+</div>
