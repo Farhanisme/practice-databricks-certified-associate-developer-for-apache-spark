@@ -79,8 +79,8 @@ jvm_options = (
 
 1.  **Clone Repositori**
     ```bash
-    git clone https://github.com/username-anda/repo-ini.git
-    cd repo-ini
+    git clone [https://github.com/username-anda/repo-ini.git](https://github.com/Farhanisme/practice-databricks-certified-associate-developer-for-apache-spark)
+    cd practice-databricks-certified-associate-developer-for-apache-spark
     ```
 
 2.  **Persiapkan Python Environment**
